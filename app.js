@@ -9,6 +9,8 @@ app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 //router.js define all routes in this server
 const router = require('./router');
 // Passing app to routers, using router.js to define all the routes
