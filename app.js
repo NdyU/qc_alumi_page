@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-// set the view engine to ejs
+// set the view engine to pug
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
