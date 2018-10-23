@@ -3,28 +3,28 @@ html
   head
     title= title
 
-
   body
     link(href='/css/style.css', rel='stylesheet')
     block navBar
         div.container
             ul
-                a(class='active' href="home")
+                a.active(href='home')
                     li Home
-                a(href="register")
+                button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
                     li Register
-                a(href="login")
+                a.login(href='login')
                     li Login
-                a(href="aboutUs")
+                a.about(href='aboutUs')
                     li About Us
-                a(href="contactUs")
+                a.contact(href='contactUs')
                     li Contact Us
-                a(href="donateUs")
+                a.donate(href='donateUs')
                     li Donate Us
     block myContent
         div.mainContent
             h1 Content1
               p Hello World
+
 
     block content2
 
