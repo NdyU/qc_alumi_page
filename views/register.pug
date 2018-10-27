@@ -1,0 +1,23 @@
+extends index
+
+block content3
+  form(method="POST" action='/register')
+    div
+      label(for="email") Email
+      input(type='text' id='email' placeholder='Email' name='email')
+    div
+      label(for="gender") Gender
+      input(type='text' id='gender' placeholder='Gender' name='gender')
+    div
+      label(for="dob") Date of Birth
+      input(type='text' id='dob' placeholder='Date Of Birth' name='dob')
+    div
+      label(for="username") Username
+      input(type='text' id='username' placeholder='Username' name='username')
+    div
+      label(for="password") Password
+      input(type='password' id='password' placeholder='Password' name='password')
+    div
+      label(for="repass") Repeat Password
+      input(type='password' id='repass' placeholder='Repeat Password' name='repass')
+    button(type='submit') Register

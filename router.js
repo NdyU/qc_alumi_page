@@ -1,12 +1,31 @@
-module.exports = function(app) {
+const Router = require('express-promise-router');
+const router = new Router();
 
-  // use res.render to load up an ejs view file
-  // index page
-  app.get('/', function(req, res) {
-      res.render('index');
-  });
+const UserController = require('./controllers/users');
 
-  app.get('/home', function(req, res) {
-    res.render('sample');
-  })
-}
+const ViewController = require('./controllers/views');
+/*
+ * Sample route structure
+ *  router.HttpMehods(get, post, delete, put, etc...) {
+ *    route,
+ *    middlewares,
+ *    view
+ *  }
+ */
+router.get(  //http request type
+  '/',  //route
+  UserController.userList, //middleware for fetching information of the userList
+  ViewController.Homepage //View Controller
+);
+
+router.get(
+  '/register',
+  ViewController.Register
+)
+router.post(
+  '/register',
+  UserController.createUser,
+  ViewController.Homepage
+);
+
+module.exports = router;
