@@ -1,8 +1,9 @@
 body {
-  padding: 50px;
+  padding-left: 100px;
+  padding-bottom: 300px;
   font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: aqua;
-  background-image: url('/image/homeim.jpeg');
+  background-image: url('/image/homeim.jpg');
   height:100%;
   background-position: 0px;
   background-position-y: -180px;
@@ -19,6 +20,8 @@ ul {
   padding: 10;
   color: #707070;
 }
+
+
 
 h1 {
     position: absolute;
@@ -44,9 +47,22 @@ h1 {
 	
 }
 
+.button2 {
+    background-color: white; /* Gray */
+    border: 3px solid #707070;
+    color: #707070;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
 .button {
     background-color: white; /* Gray */
-    border: none;
+    border: 1px solid #707070;
     color: #707070;
     padding: 12px 15px;
     text-align: center;

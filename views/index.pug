@@ -10,28 +10,27 @@ html
     block navBar
         div.container
             ul
-                a(class='active' href="home")
+                a(class='active' href="home" style="font-size: 54px; font-weight: 300;")
                     li Home
-                a(href="register")
-                    li Register
-                a(href="login")
-                    li Login
                 a(href="aboutUs")
                     li About Us
                 a(href="contactUs")
                     li Contact Us
                 a(href="donateUs")
                     li Donate Us
+                a(href="login" style="margin-left: 500px; ")
+                    li Login
+                a(class='button2' href="Register")
+                    button2 Join Us
     block myContent
-        div.mainContent
-        h1  A</br> project</br> about our</br> teams</br>
-     
-            
-               a(class='button' href='aboutUs') Details
 
     block content2
 		
     block content3
+        div.mainContent
+        h1  A</br> project</br> about our</br> teams</br>
+
+               a(class='button' href='aboutUs') Details
 
     #footer
            div.muted.credit Example courtesy
